@@ -16,15 +16,16 @@
   },
   "scripts": {
     "test": "NODE_OPTIONS='--loader ts-node/esm --no-warnings' mocha --exit test/**/*.test.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "ffjavascript": "github:p4u/ffjavascript",
-    "wasmcurves": "github:p4u/wasmcurves"
+    "ffjavascript": "git+https://github.com/p4u/ffjavascript.git",
+    "wasmcurves": "git+https://github.com/p4u/wasmcurves.git"
   },
   "devDependencies": {
     "@types/chai": "^5.2.3",

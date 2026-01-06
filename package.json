@@ -1,0 +1,21 @@
+{
+  "name": "@vocdoni/poseidon377js",
+  "version": "0.1.0",
+  "description": "Poseidon hash implementation for BLS12-377",
+  "main": "js/dist/index.js",
+  "module": "js/dist/index.js",
+  "types": "js/dist/index.d.ts",
+  "exports": {
+    ".": "./js/dist/index.js"
+  },
+  "files": [
+    "js/dist"
+  ],
+  "scripts": {
+    "prepare": "cd js && npm install && npm run build"
+  },
+  "dependencies": {
+    "ffjavascript": "git+https://github.com/p4u/ffjavascript.git",
+    "wasmcurves": "git+https://github.com/p4u/wasmcurves.git"
+  }
+}
